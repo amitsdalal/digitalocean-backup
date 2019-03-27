@@ -311,9 +311,10 @@ def start_backup(droplet: digitalocean.Droplet, keep: bool, tag_name: str) -> di
     )
     # snap_name = droplet.name + "--dobackup--2018-05-02 12:37:52"
     if droplet.status == "active":
-        turn_it_off(droplet)
-    elif droplet.status == "off":
-        log.info("The Droplet Is Already Off : " + str(droplet) + " Taking Snapshot")
+       # turn_it_off(droplet)
+    log.info("The Droplet Is On : " + str(droplet) + " Taking Snapshot")
+     elif droplet.status == "off":
+        log.info("The Droplet Is Off : " + str(droplet) + " Taking Snapshot")
     else:
         log.error("'droplet.status' SHOULD BE EITHER 'off' OR 'active'")
     log.info("Taking snapshot of " + droplet.name)

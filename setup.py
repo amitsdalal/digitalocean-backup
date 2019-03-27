@@ -18,10 +18,10 @@ setuptools.setup(
     version=__version__,
     description='Automated offline snapshots of digitalocean droplets',
     license='GNU General Public License v3 or later (GPLv3+)',
-    author='JGill',
+    author='Amit Dalal',
     zip_safe=False,
-    author_email='joty@mygnu.org',
-    url='https://github.com/jotyGill/digitalocean-backup/',
+    author_email='sameerashle@gmail.com',
+    url='https://github.com/amitsdalal/digitalocean-backup/',
     keywords=[
         'backup', 'automated-backup', 'digitalocean', 'digital-ocean',
         'backups', 'automation', 'digitalocean-backup', 'snapshots'],
